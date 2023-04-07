@@ -1,8 +1,23 @@
 # **Specification**
 
-*The specification consists in describing the product with a "black box" external view to capture the intermediate technical objects (stakeholders, external interfaces, services, and constraints) that serve to, *in fine*, elucidate the product requirements.*
+In order to best meet the customer's needs, we felt it was more efficient to ask him directly what he wanted from our machine. To do this, we drew up a first set of specifications and sent them to him. This was followed by several email exchanges and corrections to the specifications. We were also able to prioritize the functions of the machine from the most important to the least important with the customer. We also integrated a method of verification for each function (visual method, on software, by measurement, etc). To date, here are our main objectives.
 
-## **How to document the specifications?** 
+## **Main objectives of this project**
+
+First of all, the machine must distribute rigid wire. It must therefore be fed with wire, tension the wire and make it circulate in the system. The tensioned wire must not deviate from its initial axis by more than 1 millimeter.
+
+Then, the machine must cut the wire to the right length and in bizot (45 degree angle). The length of wire to be cut ranges from 5.08 to 50.8 mm with a pitch of 2.54 mm with a tolerance of 0.5 mm. Here is the nomenclature of a jumper to make it clearer :
+
+As for the removal of the sleeve, it must be done on the left and right parts of the cut wire on a length of 6.5 mm on each side with a tolerance of 0.5 mm. This step must be done with care in order not to damage the conductors. We have also thought of a sorting system in order to differentiate between the waste of the sleeve and the waste of the conductor wire.
+
+For the bending part of the machine, the edges of the wires must be bent at 90° with a tolerance of 5°, and above all they must not modify the initial geometry of the wire, that is to say that the wire must remain straight.
+
+Then, for the operation of the machine, the customer would like it to be powered by different sources (nomadic mode, 12v DC) and to withstand the temperature conditions of a laboratory. Moreover, the machine must also respect a rate of 1 jumper in 10 seconds. It must be reliable, i.e. it must produce at least 10 jumpers in a row that comply with the specifications mentioned above. But the machine must also be dismountable and mountable with simple tools in one hour maximum.
+
+As far as safety is concerned, the customer would like the machine to stop completely in less than one second with a simple manipulation. Also, if the instructions are not followed, the machine should not start. Moreover, during its operation no moving part of the system should be reachable by the user.
+
+Finally, for the spatial dimensions, the system must not exceed the dimensions L50*W30*H30 cm and must not weigh more than 15 Kg.
+
   
 ## **1. Stakeholders:**
 <details>
