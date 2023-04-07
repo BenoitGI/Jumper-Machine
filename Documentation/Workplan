@@ -3,28 +3,24 @@
 ## **1. Work repartition:**
 <details>
   <summary>Delivery</summary>
-  
- </details>
+  From the beginning of the project, we had in mind to share the work between us by "Functional Block" of the project (cut, strip, fold, feed) to allow us to advance in parallel and thus to be more efficient. Moreover, our objective was to get as close as possible to the customer's expectations by regularly exchanging with him on our progress or our questions.
+That's why the AGILE method seemed to be adapted in our case.
 
-## **2. Stakeholders:**
-<details>
-  <summary>Stakeholders diagram</summary>
-  
-    ![Image of stakeholder of jumper machine](https://github.com/BenoitGI/Jumper-Machine-/blob/main/Sources/Images/Stakeholders.png)
- 
- </details>
-  
- ## **3. Main objectives:**
- <details>
-  <summary>Main objectives of this project</summary>
-  
-</details>
-  
-## **4. Requirement**
 
-<details>
-  <summary>Requirements table</summary>
-  
-     ![Image of requirements](https://github.com/BenoitGI/Jumper-Machine-/blob/main/Sources/Images/Stakeholders.png)
- 
- </details>
+We are going to apply it by separating ourselves into two groups (2 and 3 people) who will each take care of one of the functional blocks during a design cycle and which will then be concluded by a customer feedback. Once this feedback is done, we start a new design cycle, either to make adjustments or to start a new functional block.
+Moreover, this method offers us the advantage of being quite flexible because if we are short of time, we can decide to "amputate" the system of certain functions (the priorities having been defined with the customer).
+
+
+As things stand now, and taking into account that we don't only have the PDP in our schedule. We hope to complete at least 2 cycles before we reach the phase where we will integrate all our functional blocks into the complete system (assembly phase).
+
+
+
+Our goal is to send at least one email to the client every 2 weeks to allow him to be involved in our progress. 
+For now, we have done all the preparatory phase to be able to divide the work and understand the ins and outs of the project. Now, we will split up and start the first Agile cycle in anticipation of a meeting with the client just before the Christmas vacations.
+
+
+With regard to document management, we have a drive because the project is not subject to industrial confidentiality. And we have decided on a title nomenclature as follows:
+
+
+
+Nevertheless, we make sure that the latest version of a document is on chamilo.
