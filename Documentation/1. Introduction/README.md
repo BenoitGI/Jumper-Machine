@@ -46,9 +46,12 @@ In any case you can contact: jean-francois.boujut@grenoble-inp.fr
 
 ## Last updates 
 
-March 2023
+07/04/2023
 
 ## Initial project team
+
+Boulay Florian - Heid Clara - Marty Virgile - Véran Benoît - Vincent Bastien
+
 
 
 ## License
