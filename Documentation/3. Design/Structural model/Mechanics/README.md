@@ -1,6 +1,5 @@
-## **How to document a structural model of mechanical products?** 
+## **Cut stress of the jumper machine** 
 
- ### **1. Calculation of the necessary torque**
 <details>
   <summary>Cut stress</summary>
   
