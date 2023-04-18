@@ -3,7 +3,10 @@
 ## **Distribution**
 <details>
   <summary>3D-printing</summary>
-  
+
+  - Wire guides
+  - Wire tensioners
+
 </details>
 
 ## **Cutting**
@@ -11,10 +14,17 @@
 <details>
   <summary>3D-printing</summary>
   
+  - Maintenance of the slides
+  - Sorting slope
+  - Blade holder
+  
 </details>
 
 <details>
   <summary>Laser cutting</summary>
+  
+  - Inclined tray
+  - Sliding tray
   
 </details>
 
@@ -23,6 +33,8 @@
 
 <details>
   <summary>Welding</summary>
+  
+  - Wiring of the drivers
   
 </details>
 
