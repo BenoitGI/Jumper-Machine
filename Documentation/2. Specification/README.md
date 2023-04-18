@@ -3,6 +3,8 @@
 In order to best meet the customer's needs, we felt it was more efficient to ask him directly what he wanted from our machine. To do this, we drew up a first set of specifications and sent them to him. This was followed by several email exchanges and corrections to the specifications. We were also able to prioritize the functions of the machine from the most important to the least important with the customer. We also integrated a method of verification for each function (visual method, on software, by measurement, etc). To date, here are our main objectives.
 
 ## **Main objectives of this project**
+<details>
+  <summary>Click to see the main objectives!</summary>
 
 First of all, the machine must distribute rigid wire. It must therefore be fed with wire, tension the wire and make it circulate in the system. The tensioned wire must not deviate from its initial axis by more than 1 millimeter.
 
@@ -17,11 +19,11 @@ Then, for the operation of the machine, the customer would like it to be powered
 As far as safety is concerned, the customer would like the machine to stop completely in less than one second with a simple manipulation. Also, if the instructions are not followed, the machine should not start. Moreover, during its operation no moving part of the system should be reachable by the user.
 
 Finally, for the spatial dimensions, the system must not exceed the dimensions L50*W30*H30 cm and must not weigh more than 15 Kg.
-
+ </details>
  
-## **1. State of the art**
+## **State of the art**
 <details>
-  <summary>Click to see the guideline!</summary>
+  <summary>Click to see the state of the art!</summary>
 
 
 Since a few decades, human beings have been using wires, especially jumpers, for electronic systems and often need to cut and strip them. That’s why they have created both wire cutter and wire stipper, then he wanted to do both those tasks with only one tool. Today, there are machines which can automatically cut and strip wires. They can either be big industrial machines or homemade ones depending on making rate, quantity, … It’s also possible for some machines to bend wires in order to make jumpers.
@@ -106,223 +108,54 @@ The last possible method is probably one of the least used, but it is quite poss
 [9] Arduino wire bender probably won’t kill all humans, Kristina Panos, Hackaday, accessed 06/11/2022, Blog, https://hackaday.com/2019/09/28/arduino-wire-bender-probably-wont-kill-all-humans/
 [10] Fully Automatic Wire Cutter Stripper Bender Machine YH-680Z, Kunshan Yuanhan Electronic Equipment, accessed 06/11/2022, Youtube video, https://www.youtube.com/watch?v=nUAdrEDehpE&ab_channel=KunshanYuanhanElectronicEquipment
 [11] Bending materials with a simple hot wire forming tool, Mike Szczys, Hackaday, accessed 06/11/2022, Blog, https://hackaday.com/2013/02/28/bending-materials-with-a-simple-hot-wire-forming-tool/
-
- 
  </details>
-  
-- **Definition:** *Stakeholders generally refer to all the actors (human and non-human) who have an interest in a product. Among the stakeholders, there are both internal players, such as users and participants of the project, and external players that are represented by the potential user of products or external entities.*
-
-- **Comments:**
-
-  - *A stakeholder is not necessarily a person (e.g. considering airports as a stakeholder when designing a two-deck aircraft).*
-  - *A stakeholder can indirectly affect the product (e.g. considering neighborhood when designing a nuclear power plant).*
-  - *A stakeholder can indirectly be affected by the product (e.g. considering the local biodiversity when designing an airport).*
+	
+ # **Stakeholders**
+<details>
+  <summary>Click to see the stakeholders!</summary>
+	
+![Stakeholders of the jumper machine](https://github.com/BenoitGI/Jumper-Machine-/blob/main/Sources/Images/Stakeholders.jpg)
+	
  </details>
  
-  <details>
-    <summary>Click to see the example!</summary>
-  
-  ```
-  What does contain the minimum documentation of the stakeholders? 
-  
-  Example of the ADD-ONS project of XYZ cargo
-  
-  - Specify the name of potential stakeholdrs 
-    - Environmental activist
-    - Repairmen
-    - Food producer
-    - Transporter
-    - Health care (street medic, ...)
-    - Makers
-    - Craftmen
-    - Other potential user
-  ```
-#### *Project of the [XYZ Cargo-ADD ONS](https://projects.opennext.eu/@xyz-cargo-add-ons/xyz-cargo-add-ons)*
-*The image below shows the stakeholders of  ADD-ONS of XYZ cargo as a graph*
-
-  ![Image of stakeholder of ADD-ONS of XYZ cargo](https://github.com/OPEN-NEXT/WP2.3-Guideline-and-templatefor-documentation-of-OSH-design-reuse/blob/main/Sources/Images/Stakeholders%20of%20XYZ%20cargo%20ADD-ONS.jpg)
-  
-<a href="https://app.diagrams.net/?libs=general#Hamerezoji1362%2Fdrawio-github%2Fmaster%2FStakeholders.drawio" target="_blank">Edit As New</a> | <a href="https://app.diagrams.net/#Hamerezoji1362%2Fdrawio-github%2Fmaster%2Fstakeholders.png">Edit in diagrams.net</a>
-</details>
-
-### Template of stakeholders
-  
-   * Stakeholder name 1
-   * ...
-
-  ![Image of template of stakeholder diagram](https://github.com/OPEN-NEXT/WP2.3-Guideline-and-templatefor-documentation-of-OSH-design-reuse/blob/main/Sources/Images/Stakeholder%20diagram%20for%20template.jpg)
-            
-  *The link below can be used to define the stakeholders of your project/product.*
-  
-  <a href="https://app.diagrams.net/?libs=general#Hamerezoji1362%2Fdrawio-github%2Fmaster%2FStakeholder%20diagram%20for%20template.drawio" target="_blank">Edit As New</a> | <a href="https://app.diagrams.net/?libs=general#Hamerezoji1362%2Fdrawio-github%2Fmaster%2FStakeholder%20diagram%20for%20template.png">Edit in diagrams.net</a>
-  
-## **2. External interfaces**
-<details>
-  <summary>Click to see the guideline!</summary>
-  
-- **Definition:**  *External interfaces are interactions between the product and the stakeholders.*
-
-- **Comments:**
-  - *An interface is made of a port (in, out, or in-out)*
-  - *An interface is made of a flow (matter, energy, or signal)*
-</details>
- <details>
-  <summary>Click to see the example!</summary>
-   
- ```
-What does contain the minimum documentation of the external interfaces? 
-
-Example XYZ Cargo ADD-ONS
-
-  - Identify the interactions between food producer and the product including 
-    - Specify needs
-    - Uses
-    
-  - Identify the interactions between maker and the product inculding  
-    - repair
-      - unmount 
-    - make
-    - reproduce
-    - modify
-  - ...
-  ```
-
-*The image below shows the external interfaces of  ADD-ONS of XYZ cargo as a graph*
-
-![Image of External interfaces of XYZ cargo-ADD ONS](https://github.com/OPEN-NEXT/WP2.3-Guideline-and-templatefor-documentation-of-OSH-design-reuse/blob/main/Sources/Images/External%20interfaces%20of%20XYZ%20Cargo%20ADD-ONS.jpg)
-
-<a href="https://app.diagrams.net/?libs=general#Hamerezoji1362%2Fdrawio-github%2Fmaster%2FExternal%20interfaces.drawio">Edit As New</a> | <a href="https://app.diagrams.net/#Hamerezoji1362%2Fdrawio-github%2Fmaster%2FExternal%20interfaces.png">Edit in diagrams.net</a>
-</details>
-
-### Template of external interfaces
-   
-   * Stakeholder name 1
-       * Flow 1
-       * ...
  
- ![Image of stakeholder diagram for template](https://github.com/OPEN-NEXT/WP2.3-Guideline-and-templatefor-documentation-of-OSH-design-reuse/blob/main/Sources/Images/External%20interfaces%20for%20template.jpg)
-  
-   *The link below can be used to define the external interfaces of your project/product.*
-  
-  <a href="https://app.diagrams.net/#Hamerezoji1362%2Fdrawio-github%2Fmaster%2FExternal%20interfaces%20for%20template.drawio">Edit As New</a> | <a href="https://app.diagrams.net/#Hamerezoji1362%2Fdrawio-github%2Fmaster%2FExternal%20interfaces%20for%20template.drawio">Edit in diagrams.net</a>
-
-## 3. Service *(synonyms: external function, capability)* 
+## **Workplan**
 <details>
-  <summary>Click to see the guideline!</summary>
-  
-- **Definition:** *A service is an effect intended by a stakeholder resulting from the interaction of the product with its environment (i.e. what the  product is for).*
+  <summary>Click to see the workplan!</summary>
 
-- **Comments:**
-  - *Services provide users with an exchange value that can be included in an economic system (e.g. airlines buy flight hours).*
-  - *Services are intended effects that can be observed from outside the product ("black box" external view), but not from outside an internal component ("white box" internal view).*
-  - *Services are defined in a solution neutral-way.*
-  - *Services can be stated as follows: The [Product] shall enable [Stakeholder] [Action verb] (e.g. The product shall enable end-user to clean its teeth)*
-  - *we often reason in terms of action verbs to communicate expected behaviors, so it would be nice to be able to search designs with action verbs*
+  From the beginning of the project, we had in mind to share the work between us by "Functional Block" of the project (cut, strip, fold, feed) to allow us to advance in parallel and thus to be more efficient. Moreover, our objective was to get as close as possible to the customer's expectations by regularly exchanging with him on our progress or our questions.
+That's why the AGILE method seemed to be adapted in our case.
+
+
+We are going to apply it by separating ourselves into two groups (2 and 3 people) who will each take care of one of the functional blocks during a design cycle and which will then be concluded by a customer feedback. Once this feedback is done, we start a new design cycle, either to make adjustments or to start a new functional block.
+Moreover, this method offers us the advantage of being quite flexible because if we are short of time, we can decide to "amputate" the system of certain functions (the priorities having been defined with the customer).
+
+
+As things stand now, and taking into account that we don't only have the PDP in our schedule. We hope to complete at least 2 cycles before we reach the phase where we will integrate all our functional blocks into the complete system (assembly phase).
+
+![Agile cycle](https://github.com/BenoitGI/Jumper-Machine-/blob/main/Sources/Images/Agile.jpg)
+
+
+Our goal is to send at least one email to the client every 2 weeks to allow him to be involved in our progress. 
+For now, we have done all the preparatory phase to be able to divide the work and understand the ins and outs of the project. Now, we will split up and start the first Agile cycle in anticipation of a meeting with the client just before the Christmas vacations.
+
+
+With regard to document management, we have a drive because the project is not subject to industrial confidentiality. And we have decided on a title nomenclature as follows:
+
+	![Documents nomenclature](https://github.com/BenoitGI/Jumper-Machine-/blob/main/Sources/Images/Title.jpg)
+
+Nevertheless, we make sure that the latest version of a document is on chamilo.
+
 </details>
 
-<details>
-  <summary>Click to see the example!</summary>
-  
- ```
-  What does contain the minimum documentation of the service to stakeholders?
-  
-  Example of services for ADD-ONS of XYZ Cargo
-  
-    - The ADD-ONS shall enable the food producer to store food
-      - 1.1 solid (10 kilos)
-      - 1.2 liquid (5 litrs)
-    - The ADD-ONS shall enable the food producer to heat food
-      -  2.1solid (150 deg Celcius)
-      - 2.2 liquid (80 deg Celcius)
-    - The ADD-ONS shall enable the food producer to cool down food for 4 hours
-      - 3.1 solid (6 deg Celcius)
-      - 3.2 liquid (6 deg Celcius)
-      
-    - ...
-  ```
- </details>
-
-### Template of services
-  
-   * Services to stakeholder 1
-       * Service 1.1
-       * ...
-
-## 4. Constraint *(Synonyms: non function requirement)*
-<details>
-  <summary>Click to see the guideline!</summary>
-  
-- **Definition:**  *A constraint is a choice that makes certain designs "not allowed" or inappropriate for their intended use.*
-
-- **Comments:**
-
-  - *The constraint is a restriction, limit, or regulation imposed on a product.*
-  - *There are two kinds of constraints: input constraints and system constraints.* 
-    - *Input constraints are imposed as part of the design specifications.*
-    - *System constraints are constraints imposed by the system in which the design solution must function.*
- </details> 
- 
- <details>
-  <summary>Click to see the example!</summary>
-  
-   ```
-  What does contain the minimum documentation of the constraints?
-  
-  Example XYZ Cargo ADD-ONS, constraints for maker of ADD-ONS
-  
-   - User should be able to dismantle ADD-ONS with a maximum one wrench and one screwdriver 
-   - Users should be able to customize the modules of ADD-ONS to fit their use. 
-   - The ADD-ONS should enable the users to do the assembly of components in a short time (10 minutes) and the maker shall select the resistance material for using ADD-ONS in different weather conditions. 
-   - ADD-ONS should be dismantled for recycling purposes.
-   - ...
-
-  ```
-</details>
-
-### Template of constraints
-  
-   * Constraint 1
-   * ...
-     
-  
-## **5. Requirement**
+## **Requirement**
 
 <details>
   <summary>Click to see the guideline!</summary>
-  
-- **Definition:** *A requirement is a formal statement that specifies when condition C is true, property P of object O is actual and its value shall belong  to domain D.*
 
-- **Comments:**
-  -  *The minimum set of independent requirements can completely characterize the needs of the product in the functional domain.*
-  -  *Functional requirements describe qualitatively the system functions or tasks to be performed in operation.* 
-  -  *Requirement can state as follows: The [stakeholder] need [Property] [object] [Action verb]  at [Condition]* 
+![Requirements part 1](https://github.com/BenoitGI/Jumper-Machine-/blob/main/Sources/Images/Requirements1.jpg)
+![Requirements part 2](https://github.com/BenoitGI/Jumper-Machine-/blob/main/Sources/Images/Requirements2.jpg)
+
+ 
  </details>
  
- <details>
-  <summary>Click to see the example!</summary>
-  
-  ```
-  Example of the functional requirement that ADD-ONS of XYZ cargo provides for the food producers, as a stakeholder, to preserve the quality of food.
- 
-  In this example, we assumed a refrigerator on the ADD-ONS could help the food producers to cool down and preserve the temperature of food. 
-  
-  So, we defined some  functional requirements (FR) based on this assumption that consist:
- 
-    - FR1: To maintain the quality of food, the food producer needs to main the material at cold temperature (between 3 °C and 10 °C) for short-term preservation (3h) or long-term preservation (24h).
-    - FR2: ADD-ONS shall fix the internal ADD-ONS temperature for 7 °C.
-    - FR3: To create a cold ambient in the cooling down system, the ADD-ONS shall compress the low temperature and pressured gas to start the cooling cycle.
-    - FR4: the cooling down system shall control the pressure of exit hot gas 
-    - FR5: the hot and pressured exit gas needs to meet the cooler external ambient temperature to become a liquid.
-    - ...
-    
-  ```
- </details>
- 
- ### Template of requirements
-    
-   * Requirement 1
-   * ...
- 
-
-
-
