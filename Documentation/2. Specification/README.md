@@ -151,7 +151,7 @@ Nevertheless, we make sure that the latest version of a document is on chamilo.
 ## **Requirement**
 
 <details>
-  <summary>Click to see the guideline!</summary>
+  <summary>Specifications</summary>
 
 ![Requirements part 1](https://github.com/BenoitGI/Jumper-Machine-/blob/main/Sources/Images/Requirements1.jpg)
 ![Requirements part 2](https://github.com/BenoitGI/Jumper-Machine-/blob/main/Sources/Images/Requirements2.jpg)
