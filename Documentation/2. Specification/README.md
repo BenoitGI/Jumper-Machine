@@ -4,7 +4,7 @@ In order to best meet the customer's needs, we felt it was more efficient to ask
 
 ## **Main objectives of this project**
 <details>
-  <summary>Click to see the main objectives!</summary>
+  <summary>Jumper machine : objectives and constraints</summary>
 
 First of all, the machine must distribute rigid wire. It must therefore be fed with wire, tension the wire and make it circulate in the system. The tensioned wire must not deviate from its initial axis by more than 1 millimeter.
 
@@ -23,7 +23,7 @@ Finally, for the spatial dimensions, the system must not exceed the dimensions L
  
 ## **State of the art**
 <details>
-  <summary>Click to see the state of the art!</summary>
+  <summary>Cutting, stripping and dispensing wire</summary>
 
 
 Since a few decades, human beings have been using wires, especially jumpers, for electronic systems and often need to cut and strip them. That’s why they have created both wire cutter and wire stipper, then he wanted to do both those tasks with only one tool. Today, there are machines which can automatically cut and strip wires. They can either be big industrial machines or homemade ones depending on making rate, quantity, … It’s also possible for some machines to bend wires in order to make jumpers.
@@ -112,7 +112,7 @@ The last possible method is probably one of the least used, but it is quite poss
 	
  # **Stakeholders**
 <details>
-  <summary>Click to see the stakeholders!</summary>
+  <summary>Stakeholders</summary>
 	
 ![Stakeholders of the jumper machine](https://github.com/BenoitGI/Jumper-Machine-/blob/main/Sources/Images/Stakeholders.jpg)
 	
@@ -121,7 +121,7 @@ The last possible method is probably one of the least used, but it is quite poss
  
 ## **Workplan**
 <details>
-  <summary>Click to see the workplan!</summary>
+  <summary>Project managment</summary>
 
   From the beginning of the project, we had in mind to share the work between us by "Functional Block" of the project (cut, strip, fold, feed) to allow us to advance in parallel and thus to be more efficient. Moreover, our objective was to get as close as possible to the customer's expectations by regularly exchanging with him on our progress or our questions.
 That's why the AGILE method seemed to be adapted in our case.
