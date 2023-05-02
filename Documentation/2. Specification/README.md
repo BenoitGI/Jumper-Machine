@@ -1,4 +1,4 @@
-# **Specification**
+# **Specifications**
 
 In order to best meet the customer's needs, we felt it was more efficient to ask him directly what he wanted from our machine. To do this, we drew up a first set of specifications and sent them to him. This was followed by several email exchanges and corrections to the specifications. We were also able to prioritize the functions of the machine from the most important to the least important with the customer. We also integrated a method of verification for each function (visual method, on software, by measurement, etc). To date, here are our main objectives.
 
