@@ -118,6 +118,17 @@ The last possible method is probably one of the least used, but it is quite poss
 	
  </details>
  
+
+## **Requirement**
+
+<details>
+  <summary>Specifications</summary>
+
+![Requirements part 1](https://github.com/BenoitGI/Jumper-Machine-/blob/main/Sources/Images/Requirements1.jpg)
+![Requirements part 2](https://github.com/BenoitGI/Jumper-Machine-/blob/main/Sources/Images/Requirements2.jpg)
+
+ 
+ </details>
  
 ## **Workplan**
 <details>
@@ -147,15 +158,3 @@ With regard to document management, we have a drive because the project is not s
 Nevertheless, we make sure that the latest version of a document is on chamilo.
 
 </details>
-
-## **Requirement**
-
-<details>
-  <summary>Specifications</summary>
-
-![Requirements part 1](https://github.com/BenoitGI/Jumper-Machine-/blob/main/Sources/Images/Requirements1.jpg)
-![Requirements part 2](https://github.com/BenoitGI/Jumper-Machine-/blob/main/Sources/Images/Requirements2.jpg)
-
- 
- </details>
- 
