@@ -43,6 +43,7 @@ This product has been intentionnally designed to be manufactured in any fablab w
 The machine will be delivered to the Ense3 FABLAB and will be tested currently under test by various people.
 An improved version will certainly be welcome in a near future.
 In any case you can contact: jean-francois.boujut@grenoble-inp.fr
+Parts of this project (mostly cutting part) were inspired by the following project: https://github.com/TomGosnik/FairEmbo-Project
 
 ## Last updates 
 
