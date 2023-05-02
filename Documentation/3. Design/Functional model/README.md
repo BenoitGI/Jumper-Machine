@@ -1,6 +1,6 @@
 We've chosen to divide the machine in two parts: the cutting and the distribution
 
-# **Cutting**
+# **Cutting and stripping**
 
 <details>
   <summary>Function analysis</summary>
