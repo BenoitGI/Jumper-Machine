@@ -110,7 +110,7 @@ The last possible method is probably one of the least used, but it is quite poss
 [11] Bending materials with a simple hot wire forming tool, Mike Szczys, Hackaday, accessed 06/11/2022, Blog, https://hackaday.com/2013/02/28/bending-materials-with-a-simple-hot-wire-forming-tool/
  </details>
 	
- # **Stakeholders**
+## **Stakeholders**
 <details>
   <summary>Stakeholders</summary>
 	
