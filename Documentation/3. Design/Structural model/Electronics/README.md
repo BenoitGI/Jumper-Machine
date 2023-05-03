@@ -2,7 +2,7 @@
 
  ### **1. Arduino codes**
 <details>
-  <summary>Distribution</summary>
+  <summary>Code</summary>
  #include <AccelStepper.h>
 #include <LiquidCrystal_I2C.h>
 
@@ -307,6 +307,7 @@ void programme_jumper(int nbr_jumper){
   lcd.print("            ");
 }
 
+</details>
 <details>
   <summary>Notes</summary>
  
