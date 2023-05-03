@@ -312,7 +312,6 @@ void programme_jumper(int nbr_jumper){
  
 </details>
 
-
 ### **2. Plan of the electrical wiring**
 <details>
   <summary>Plan</summary>
