@@ -20,3 +20,21 @@ For the stripping, we observed with a dynamometer that 4 cm sheath is stripped w
 
   
 </details>
+
+## **Bending tests**
+<details>
+  <summary>Calculations</summary>
+ 
+</details>
+
+## **Distribution of the wire**
+<details>
+  <summary>Calculations</summary>
+ 
+</details>
+
+## **Stripping tests**
+<details>
+  <summary>Calculations</summary>
+ 
+</details>
