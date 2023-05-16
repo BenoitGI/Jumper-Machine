@@ -33,8 +33,16 @@ For the stripping, we observed with a dynamometer that 4 cm sheath is stripped w
  
 </details>
 
-## **Stripping tests**
+## **Stripping and cutting tests**
 <details>
   <summary>Calculations</summary>
  
+</details>
+
+## **Test on the deformation of the inclined plate**
+<details>
+  <summary>Calculations</summary>
+
+We tested the flexibility of the inclined plate under cutting and stripping forces. We used a measuring gauge that we placed on the plate while the machine was running. Our measurements proved that the plate moves very little (order of magnitude of a hundredth of a millimeter). We concluded that the variations due to the flexibility of the plate had no impact on the quality of the jumpers.
+  
 </details>
