@@ -6,7 +6,7 @@ Creating a HMI was an important step to ensure the machine is usable. It allows 
 <details>
   <summary>Descrition of the man machine interface</summary>
  
- ![Man machine interface](https://github.com/BenoitGI/Jumper-Machine-/blob/main/Sources/Images/Man_machine_interface.png)
+ ![Man machine interface](https://github.com/BenoitGI/Jumper-Machine-/blob/main/Sources/Images/MMI%20organization.PNG)
  
  </details>
  
@@ -14,4 +14,5 @@ Creating a HMI was an important step to ensure the machine is usable. It allows 
 <details>
   <summary>Click to see the guideline!</summary>
  
+ ![Man machine interface guidelines](https://github.com/BenoitGI/Jumper-Machine-/blob/main/Sources/Images/Man-machine%20interface%20guidelines.png)
 </details>
