@@ -1,5 +1,7 @@
 # Introduction
 
+![Final prototype](https://github.com/BenoitGI/Jumper-Machine-/blob/main/Sources/Images/Final%20prototype.jpg)
+
 ## Motivation
 
 Our project focuses on a jumper cutting and stripping machine.
