@@ -3,6 +3,7 @@
  ### **1. Arduino codes**
 <details>
   <summary>Code</summary>
+
  #include <AccelStepper.h>
 #include <LiquidCrystal_I2C.h>
 
@@ -15,28 +16,30 @@ int step_pin2 = 7 ;
 
 int VRx = A0; // set the pins to read the inputs of the joystick
 int VRy = A1;
-int btn_dem = 10;
+int btn_dem = 9;
 
 int xPosition = 0;
 int yPosition = 0;
 int mapX = 0;
 int mapY = 0;
 
-const int led_Vert = 13 ;
-const int led_Red = 12 ;
+const int led_Vert = 12 ;
+const int led_Red = 10 ;
 const int led_Jaune = 11 ;
+
+const int btn_cable = 2;
 
 const int step_per_rev1 = 3200; // number of steps per revolution, here we multiply by 16
 const int step_per_rev2 = 1600; // number of steps per revolution, here we multiply by 8
 
 int dem; // variable to regester the state of the joystick button
 int menu = 0; // variable to navigate between menus
-int urgence = 0; //variable to signal a problem when it's 1
+int urgence = false; //variable to signal a problem when it's 1
 
 int position_came = 0; // Variable to controle the position of the stepper when setting the blade for stripping
 int position_denude = 0; // variable to save the stripping position of the stepper
 int distance_denude = 7; // define the length of wire to expose on both side of the jumper, here 8 mm
-int longueur_cable = 8; // variable for the length of sheath to leave on the wire, proportional to the number of pins it would cover on a breadboard
+int longueur_cable = 3; // variable for the length of sheath to leave on the wire, proportional to the number of pins it would cover on a breadboard
 int nbr_jumper = 1; // define the number of jumpers to cut, initialized to 1
 
 AccelStepper stepper1(1, step_pin, dir_pin); //define the steppers with the accel stepper library
@@ -54,41 +57,67 @@ void setup(){
   digitalWrite(led_Vert, LOW);
   digitalWrite(led_Red, LOW);
   digitalWrite(led_Jaune, LOW);
+
+  pinMode(btn_cable, INPUT_PULLUP);
   
   Serial.begin(9600) ;
   Serial.println("le systeme est initialise");
 
-  stepper1.setMaxSpeed(3200); //SPEED = Steps / seconde
-  stepper1.setAcceleration(3000); //ACCELERATION = Steps / seconde^2
+  stepper1.setMaxSpeed(7000); //SPEED = Steps / seconde
+  stepper1.setAcceleration(4000); //ACCELERATION = Steps / seconde^2
   stepper1.setCurrentPosition(0);
   
-  stepper2.setMaxSpeed(800);
+  stepper2.setMaxSpeed(1000);
   stepper2.setAcceleration(3000);
   stepper2.setCurrentPosition(0);
   }
 
 void loop(){
   lcd.backlight();
-  
-  digitalWrite(led_Red, LOW);
-  digitalWrite(led_Vert,HIGH); // the system works, but no program runs we light the green LED
-  digitalWrite(led_Jaune,LOW); // the yellow LED will light when executing a program running at least one of the steppers
-  
-  dem = false;
-  button_detect();
-  
-  get_position_joystick();
 
-  change_menu();
+  cable_detect();
 
-  enter_menu();
+  if (urgence == true){
+    digitalWrite(led_Red, HIGH); // the ssystem has an issue with the wire
+    digitalWrite(led_Vert,LOW);
+    digitalWrite(led_Jaune,LOW);
+
+    lcd.setCursor(0,0);
+    lcd.print("No wire         ");
+    lcd.setCursor(0,1);
+    lcd.print("           ");
+  }
+  
+  else{
+    digitalWrite(led_Red, LOW); // the ssystem has no issue with the wire
+    digitalWrite(led_Vert,HIGH); // the system works, but no program runs we light the green LED
+    digitalWrite(led_Jaune,LOW); // the yellow LED will light when executing a program running at least one of the steppers
+    
+    dem = false;
+    button_detect();
+  
+    get_position_joystick();
+
+    change_menu();
+
+    enter_menu();
+  }
+}
+
+void cable_detect(){
+  if (digitalRead(btn_cable) == HIGH){
+    urgence = true;
+  }
+  else{
+    urgence = false;
+  }
 }
 
 void button_detect(){
   if (digitalRead(btn_dem) == LOW){ // read the pullup of the joystick's button
     dem = not(dem);
   }
-  delay(200);
+  delay(150);
 }
 
 void get_position_joystick(){                // get cordinates of the joystick and map them around zero
@@ -99,17 +128,23 @@ void get_position_joystick(){                // get cordinates of the joystick a
 }
 
 void change_menu(){                         // change the menu with the x coordinates of the joystick
-  if ((mapX>=300)&&(mapY>=-175)&& (mapY<=175)){
-    if (menu < 4){
+  if ((mapX>=100)&&(mapY>=-175)&& (mapY<=175)){
+    if (menu <= 4){
       menu += 1;
+      if (menu == 5){
+        menu = 0;
+      }
     }
   }
-  if ((mapX<=-300)&&(mapY>=-175)&& (mapY<=175)){
-    if (menu > 0){
+  if ((mapX<=-100)&&(mapY>=-175)&& (mapY<=175)){
+    if (menu >= 0){
       menu -= 1;
+      if (menu == -1){
+        menu = 4;
+      }
     }
   }
-  delay(200);
+  delay(150);
 }
 
 void enter_menu(){          // will execute the functions of a menu if the user pressed the button of the joystick
@@ -123,7 +158,7 @@ void enter_menu(){          // will execute the functions of a menu if the user 
       lcd.print("Executing       ");
       digitalWrite(led_Jaune,HIGH);
       digitalWrite(led_Vert,LOW);
-      distribution(190);
+      distribution(110);
     }
   }
   
@@ -173,8 +208,12 @@ void enter_menu(){          // will execute the functions of a menu if the user 
     if (dem){
       digitalWrite(led_Jaune,HIGH);
       digitalWrite(led_Vert,LOW);
+      lcd.setCursor(0,0);
+      lcd.print("Cutting jumper: ");
       lcd.setCursor(0,1);
-      lcd.print("Executing    ");
+      lcd.print("1 over ");
+      lcd.setCursor(7,1);
+      lcd.print(nbr_jumper);
       programme_jumper(nbr_jumper);
       dem = not(dem);
     }
@@ -182,10 +221,7 @@ void enter_menu(){          // will execute the functions of a menu if the user 
 } 
 
 void distribution(float distance){  // feed cable with a given distance in mm
-  stepper1.moveTo(step_per_rev1 * distance / (10.3
-  
-  
-  * 3.14159265)); // 12.24 is the value mesured of the diameter from the extruder
+  stepper1.moveTo(step_per_rev1 * distance / (10.3 * 3.14159265)); // 12.24 is the value mesured of the diameter from the extruder
   stepper1.runToPosition();
   stepper1.setCurrentPosition(0);
   delay(100);
@@ -204,15 +240,35 @@ void define_jumper_nbr(){
     change_nbr_jumper();  // change the value of nbr_jumper
     button_detect();
   }
+  delay(100);
 }
 
 void change_nbr_jumper(){
-  if ((mapY>=300)){
-    nbr_jumper += 10;
+  
+  if ((nbr_jumper < 500) && (mapY>=20)){
+    if (mapY>= 470){
+      nbr_jumper += 10;
+    }
+    else{
+      nbr_jumper += 1;
+    }
   }
-  if ((nbr_jumper > 3) && (mapY<=-300)){
-    nbr_jumper -= 10;
+  if (nbr_jumper > 500){
+    nbr_jumper = 500;
   }
+  
+  if ((nbr_jumper > 1) && (mapY<=-20)){
+    if (mapY <=-470){
+      nbr_jumper -= 10;
+    }
+    else{
+      nbr_jumper -= 1;
+    }
+  }
+  if (nbr_jumper < 1){
+    nbr_jumper = 1;
+  }
+  
   lcd.setCursor(0,0);
   lcd.print("Nbr Jumper:   IN");
   lcd.setCursor(0,1);
@@ -228,13 +284,14 @@ void define_jumper_long(){
     change_long_jumper();  // change the value of longueur_cable
     button_detect();
   }
+  delay(100);
 }
 
 void change_long_jumper(){
-  if ((mapY>=300) && (longueur_cable < 15)){
+  if ((mapY>=100) && (longueur_cable < 15)){
     longueur_cable += 1;
   }
-  if ((longueur_cable > 1) && (mapY<=-300)){
+  if ((longueur_cable > 1) && (mapY<=-100)){
     longueur_cable -= 1;
   }
   lcd.setCursor(0,0);
@@ -263,8 +320,8 @@ void define_denude(){
 }
 
 void change_speed_came(){
-  if (((position_came > 0) || ((position_came <= 0) && (mapY > 0)))&& (abs(mapY)>5)){ // will allow to set the position only in the direction the came turns
-    position_came += 0.2 * mapY;   // the more we push the joystick in one way, the more steps it will make the mottor move
+  if (((position_came > 0) || ((position_came <= 0) && (mapY > 0)))&& (abs(mapY)>15)){ // will allow to set the position only in the direction the came turns
+    position_came += 0.1 * mapY;   // the more we push the joystick in one way, the more steps it will make the mottor move
   }
   lcd.setCursor(0,1);
   lcd.print(position_came);
@@ -295,6 +352,20 @@ void programme_jumper(int nbr_jumper){
   coupe(); // cut the tip of the wire to assure to cut the first one to the good length
   
   for (int i=0; i <= nbr_jumper-1; i++){
+    
+    cable_detect(); // run the program only if the machine has wire
+    if (urgence == true){
+      menu = 0;
+      break;
+    }
+
+    lcd.setCursor(0,1);
+    lcd.print(i+1);
+    lcd.setCursor(String(i+1).length(), 1);
+    lcd.print(" over ");
+    lcd.setCursor(String(i+1).length() + 6, 1);
+    lcd.print(nbr_jumper);
+    
     distribution(distance_denude * 2); // feed the wire the double the length to strip
     denude(2); // strip the double lentgh defined before
     distribution(distance_denude * 2 + longueur_cable * 2.54 + 10); // feed the cable to the end of the jumper
@@ -307,14 +378,13 @@ void programme_jumper(int nbr_jumper){
   lcd.print("            ");
 }
 
-</details>
-<details>
-  <summary>Notes</summary>
- 
-</details>
+</details> 
+
 
 ### **2. Plan of the electrical wiring**
 <details>
   <summary>Plan</summary>
+ 
+ ![Electrical wiring plan](https://github.com/BenoitGI/Jumper-Machine-/blob/main/Sources/Images/Electrical_wiring.PNG)
  
  </details> 
