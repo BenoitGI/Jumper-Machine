@@ -59,11 +59,8 @@ Parts of this project (mostly cutting part) were inspired by the following proje
 "Florian Boulay" florian.boulay@hotmail.com
 "Clara Heid" clara.heid@grenoble-inp.org
 
-## License
-
-
 ## Sponsors and Partners
 
-https://genie-industriel.grenoble-inp.fr/
-https://ense3.grenoble-inp.fr/fr/l-ecole/fablab
+https://genie-industriel.grenoble-inp.fr/,
+https://ense3.grenoble-inp.fr/fr/l-ecole/fablab,
 https://s-mart.fr/
