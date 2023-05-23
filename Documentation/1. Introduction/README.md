@@ -61,6 +61,6 @@ Parts of this project (mostly cutting part) were inspired by the following proje
 
 ## Sponsors and Partners
 
-https://genie-industriel.grenoble-inp.fr/,
-https://ense3.grenoble-inp.fr/fr/l-ecole/fablab,
-https://s-mart.fr/
+Grenoble INP Génie Industriel : https://genie-industriel.grenoble-inp.fr/,
+Grenoble INP Ense3 : https://ense3.grenoble-inp.fr/fr/l-ecole/fablab,
+Plateforme Smart : https://s-mart.fr/
