@@ -41,19 +41,8 @@
 ### *Bill of material (BOM)*
 <details>
   <summary>Click to see the guideline</summary>
- 
-   1. Part number
-   2. Item name
-   3. Manufacturer part number
-   4. Digi-Key part number
-   5. Description
-   6. Manufactured part (link to manufacturing instruction)
-   7. Purchased part (link to seller website)
-   8. Quantity
-   9. Price
-   10. Manufacturing standard lead time
-   11. Packaging
-   12. BOM notes
-   13. ...
-   ```
+
+  Here is the link to our bills of materials: https://docs.google.com/spreadsheets/d/1yhA7t2v-O0wYP4HWWvgyj2ZClPfeTmF2AkF9bh3GDKE/edit?usp=sharing
+  If you have trouble opening it please send an e-mail to the members of the team (2022-2023)
+
 </details>
