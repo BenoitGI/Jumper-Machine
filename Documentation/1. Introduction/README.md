@@ -64,3 +64,7 @@ Parts of this project (mostly cutting part) were inspired by the following proje
 Grenoble INP Génie Industriel : https://genie-industriel.grenoble-inp.fr/,
 Grenoble INP Ense3 : https://ense3.grenoble-inp.fr/fr/l-ecole/fablab,
 Plateforme Smart : https://s-mart.fr/
+
+## Acknowledgements
+
+Florian, Clara, Virgile, Benoît and Bastien would like to thank the teachers for their support throughout this project, as well as Mr. Mantegazza for his help during some difficult phases.
