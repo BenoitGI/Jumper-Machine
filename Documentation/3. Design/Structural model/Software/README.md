@@ -19,8 +19,7 @@ Creating a HMI was an important step to ensure the machine is usable. It allows 
 
 <details>
  <summary>How to set the stripping position</summary>
- 
- 
+ </br>
  When you enter the “set denude” menu, you will be able to set the blade to the position of stripping, where it is just cutting the sheath.
  
  The first step will be to ensure a small part of the wire is stepping out of the machine (it will be cut of when you run the program, so you don’t need to much wire because it’s waste).
