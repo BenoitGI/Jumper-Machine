@@ -49,13 +49,15 @@ Parts of this project (mostly cutting part) were inspired by the following proje
 
 ## Last updates 
 
-25/04/2023
+23/05/2023
 
 ## Initial project team
 
-Boulay Florian - Heid Clara - Marty Virgile - Véran Benoît - Vincent Bastien
-
-
+"Benoit Veran" benoit.veran@grenoble-inp.org
+"Virgile Marty" virgile.marty@grenoble-inp.org
+"Bastien Vincent" bastien.vincent@grenoble-inp.org
+"Florian Boulay" florian.boulay@hotmail.com
+"Clara Heid" clara.heid@grenoble-inp.org
 
 ## License
 
