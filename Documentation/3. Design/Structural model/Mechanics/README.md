@@ -1,3 +1,4 @@
+### Technical work and calculations
 ## **Cut stress**
 <details>
   <summary>Calculations</summary>
