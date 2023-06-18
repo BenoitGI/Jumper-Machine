@@ -13,7 +13,6 @@ Then, the machine must cut the wire to the right length and in bizot (45 degree 
 
 As for the removal of the sleeve, it must be done on the left and right parts of the cut wire on a length of 6.5 mm on each side with a tolerance of 0.5 mm. This step must be done with care in order not to damage the conductors. We have also thought of a sorting system in order to differentiate between the waste of the sleeve and the waste of the conductor wire.
 
-![Operating mode of the machine](https://github.com/BenoitGI/Jumper-Machine-/blob/main/Sources/Images/Jumper%20Machine.jpg)
 
 For the bending part of the machine, the edges of the wires must be bent at 90° with a tolerance of 5°, and above all they must not modify the initial geometry of the wire, that is to say that the wire must remain straight.
 
