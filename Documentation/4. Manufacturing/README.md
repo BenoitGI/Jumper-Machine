@@ -60,6 +60,6 @@
 <details>
   <summary>Click to see the guideline</summary>
 
-  You will find our _Bill Of Materials_ here : [BOM](../Jumper-Machine-/tree/main/Sources/Documents#bom)
+  You will find our _Bill Of Materials_ here : [BOM](../../Jumper-Machine-/tree/main/Sources/Documents#bom)
 
 </details>
