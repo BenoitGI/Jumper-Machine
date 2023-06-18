@@ -1,4 +1,4 @@
-<center> <h1>Jumper Machine 2022/2023</h1> </center>
+<p align="center"> <h1>Jumper Machine 2022/2023</h1> </p>
 
 ## Introduction
 
