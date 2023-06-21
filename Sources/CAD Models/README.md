@@ -5,4 +5,5 @@ we remind you that we have an OnShape file (if you have a licence) :
 For each of our part on this GitHub project,  you'll have :
 - **.STL** if you just want to print the part.
 - **.Dxf** if it's a part make by a laser cutting technologie.
+- **.pdf** for bending plans for certain parts
 - **.FCStd** which allow you to modify the part on a free and open-source CAD software named **FreeCAD**.
