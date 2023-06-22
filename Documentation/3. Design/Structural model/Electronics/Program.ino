@@ -31,7 +31,7 @@ const int led_Jaune = 11 ;
 const int btn_cable = 2;
 
 const int step_per_rev1 = 3200; // number of steps per revolution, here we multiply by 16
-const int step_per_rev2 = 3200; // number of steps per revolution, here we multiply by 8
+const int step_per_rev2 = 3200; // number of steps per revolution, here we multiply by 16
 
 int dem; // variable to register the state of the joystick button
 int menu = 0; // variable to navigate between menus
