@@ -90,6 +90,7 @@ Stripping repeatability experimental device (1600 steps per revolution and then 
   Conclusion: The results clearly show there is a displacement of our motor for each repetition, with a different constant tendency for each offset. 
 To solve that issue, we raised the number of steps per revolution from 1600 to 3200 as it cut the errors by a factor of 2. Also, we added a 2 steps offset every time the cam turns back to the origin, as for each resolution this offset results in the least error in time, even though there is still a tendency to drop for this offset. It will be recommended to redo the stripping position every hundredths of jumpers' cut, some longer tests are needed to check more precisely how many we can cut before there is an issue and we stay in the tolerances fixed.
 
+  _We also talk about this issue in our [Final Deliverable](../../../../Sources/Documents)_
 </details>
 
 ## **Test on the deformation of the inclined plate**
