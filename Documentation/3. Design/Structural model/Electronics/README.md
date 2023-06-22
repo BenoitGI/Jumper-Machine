@@ -1,12 +1,12 @@
-## **How to document a structural model of electrical products?**
-
+Our project has been make to work with an **Arduino card** (especially an _Arduino Nano_).
+You'll find here the overview of the code and we provide you the code under _.INO_ extension for the Arduino IDE. Ther is also a **wiring plan** of how we connect all together the components of the machine
  ### **1. Arduino codes**
 <details>
   <summary>Code</summary>
 
- #include <AccelStepper.h>
+```c
+#include <AccelStepper.h>
 #include <LiquidCrystal_I2C.h>
-
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 
 int dir_pin = 4 ; // set the pins to control the steppers
@@ -377,7 +377,7 @@ void programme_jumper(int nbr_jumper){
   lcd.setCursor(0,1);
   lcd.print("            ");
 }
-
+```
 </details> 
 
 
