@@ -1,1 +1,1 @@
-[Assembly of the Base Plate](../../../Documentation/Assembly)
+[Assembly of the Base Plate](../../../Documentation/Assembly/)
