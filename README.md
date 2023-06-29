@@ -13,6 +13,6 @@ We also own an OnShape file with all our CAD models and assemblies
 </center>
 
  
-![3D view with dimensions](<Sources/Images/vue 3D.png>)
+![3D view with dimensions](<Sources/Images/IMG_CAD/dimension.png>)
 
 ![Utility of jumpers in prototyping](<Sources/Images/utility of jumpers.png>)
